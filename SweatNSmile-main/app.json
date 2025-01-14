@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "sdkVersion": "52.0.0",
+    "name": "SweatNSmile",
+    "slug": "SweatNSmile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take photos.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to choose photos.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to save photos to your library.",
+        "NSHealthShareUsageDescription": "This app needs access to write step data to the Health app.",
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "The app accesses your camera to take pictures."
+        }
+      ]
+    ],
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": ["react-redux"]
+      }
+    }
+  }
+}
